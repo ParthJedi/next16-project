@@ -4,6 +4,7 @@ import { APP_NAME } from '@/lib/constants';
 import Link from 'next/link';
 import Image from 'next/image';
 import ThemeToggle from './theme-toggle';
+import Menu from './menu';
 
 const Header = () => {
 	return (
@@ -23,19 +24,7 @@ const Header = () => {
 						</span>
 					</Link>
 				</div>
-				<div className='flex flex-end space-x-3'>
-					<ThemeToggle />
-					<Button asChild variant='ghost'>
-						<Link href='/cart' className='flex items-center'>
-							<ShoppingCart /> Cart
-						</Link>
-					</Button>
-					<Button asChild>
-						<Link href='/login'>
-							<UserIcon /> Sign In
-						</Link>
-					</Button>
-				</div>
+				<Menu />
 			</div>
 		</header>
 	);
