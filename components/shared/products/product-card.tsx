@@ -1,4 +1,4 @@
-import { Linden_Hill } from 'next/font/google';
+import ProductPrice from './product-price';
 import { Product } from '../../../db/sample-data';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import Link from 'next/link';
@@ -26,7 +26,7 @@ const ProductCard = ({ product }: { product: Product }) => {
 				<div className='flex-between gap-4'>
 					<p>{product.rating} stars</p>
 					{product.stock > 0 ? (
-						<p className='font-bold'>$ {product.price}</p>
+						<ProductPrice value={product.price} />
 					) : (
 						<p className='text-destructive'>Out of stock</p>
 					)}
