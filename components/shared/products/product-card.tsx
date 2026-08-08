@@ -24,9 +24,9 @@ const ProductCard = ({ product }: { product: Product }) => {
 					<h2 className='text-sm font-medium'>{product.name}</h2>
 				</Link>
 				<div className='flex-between gap-4'>
-					<p>{product.rating} stars</p>
+					<p>{product.rating as number} stars</p>
 					{product.stock > 0 ? (
-						<ProductPrice value={product.price} />
+						<ProductPrice value={product.price as number} />
 					) : (
 						<p className='text-destructive'>Out of stock</p>
 					)}
