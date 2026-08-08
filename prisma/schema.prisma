@@ -15,8 +15,8 @@ model Product {
   brand       String
   images      String[]
   description String
-  price       Decimal  @default(0.00) @db.Decimal(12, 2)
-  rating      Decimal  @default(0.00) @db.Decimal(3, 2)
+  price       Float    @default(0.00)
+  rating      Float    @default(0.00)
   numReviews  Int      @default(0)
   isFeatured  Boolean  @default(false)
   banner      String?
