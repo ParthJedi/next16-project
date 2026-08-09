@@ -1,20 +1,3 @@
-import { Decimal } from '@prisma/client/runtime/client';
-
-export type Product = {
-	name: string;
-	slug: string;
-	category: string;
-	description: string;
-	images: string[];
-	price: number | Decimal | string;
-	brand: string;
-	rating: number | Decimal | string;
-	numReviews: number;
-	stock: number;
-	isFeatured: boolean;
-	banner: string | null;
-};
-
 const sampleData = {
 	products: [
 		{

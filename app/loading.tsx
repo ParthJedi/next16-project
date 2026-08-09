@@ -16,6 +16,7 @@ const LoadingPage = () => {
 				src={loader}
 				alt='Loading...'
 				style={{ width: 'auto', height: 'auto' }}
+				loading='eager'
 			/>
 		</div>
 	);
