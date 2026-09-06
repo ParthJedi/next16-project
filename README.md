@@ -1,6 +1,8 @@
 # next16-project
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# It is a WIP; Vercel hosted URL: [Next16][https://next16-project-r50lrgw7u-parthjedis-projects.vercel.app/]
+
 ## Getting Started
 
 First, run the development server:
